@@ -4,7 +4,7 @@ import React from 'react';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-gray-800 p-4">
+    <header className="bg-gray-900 p-4">
       <nav className="flex justify-between items-center">
         <h1 className="text-white text-2xl font-bold">My Blog about Testing</h1>
         <ul className="flex space-x-4">
@@ -18,11 +18,11 @@ const Header: React.FC = () => {
               About me
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/contacts" className="text-white hover:text-gray-400">
               Contacts
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

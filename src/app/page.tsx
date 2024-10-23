@@ -47,8 +47,6 @@ test('homepage has Playwright in title', async ({ page }) => {
           </section>
         </Link>
       </main>
-
-      <Footer />
     </div>
   );
 };

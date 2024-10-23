@@ -6,7 +6,10 @@ const Header: React.FC = () => {
   return (
     <header className="bg-gray-900 p-4">
       <nav className="flex justify-between items-center">
-        <h1 className="text-white text-2xl font-bold">My Blog about Testing</h1>
+        <h1 className="text-white text-2xl font-bold">
+          <Link href="/" className="text-white hover:text-gray-400">
+            My Blog about Testing
+          </Link></h1>
         <ul className="flex space-x-4">
           <li>
             <Link href="/" className="text-white hover:text-gray-400">

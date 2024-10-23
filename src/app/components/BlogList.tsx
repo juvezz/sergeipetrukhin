@@ -8,8 +8,6 @@ interface Post {
 
 const posts: Post[] = [
   { title: 'Understanding Selenium Testing', date: 'October 10, 2024' },
-  { title: 'How to Automate Tests with Cypress', date: 'September 15, 2024' },
-  { title: 'Best Practices for Unit Testing in JavaScript', date: 'August 30, 2024' },
 ];
 
 const BlogList: React.FC = () => {

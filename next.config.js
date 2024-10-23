@@ -1,7 +1,11 @@
 // next.config.js
-module.exports = {
+const { withSitemap } = require('next-sitemap');
+
+module.exports = withSitemap({
   output: 'export',
   images: {
-    unoptimized: true
-  }
-};
+    unoptimized: true,
+  },
+  // other Next.js configurations can go here
+});
+

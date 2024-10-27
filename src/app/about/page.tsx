@@ -19,7 +19,6 @@ type WorkExperience = {
     responsibilities: string[];
 };
 
-// Metadata for the page
 export const metadata = {
     title: 'About Me - Senior QA Automation Engineer',
     description: 'Senior QA Automation Engineer with extensive experience in test automation and quality assurance.',
@@ -29,13 +28,12 @@ export const metadata = {
     openGraph: {
         title: 'About Me - Senior QA Automation Engineer',
         description: 'Senior QA Automation Engineer with extensive experience in test automation and quality assurance.',
-        url: 'https://yourwebsite.com/about', // Replace with your actual URL
+        url: 'https://yourwebsite.com/about',
         siteName: 'Blog about Testing',
     },
 };
 
 const AboutPage: React.FC = () => {
-    // Work Experience data
     const workExperience: WorkExperience[] = [
         {
             title: 'Senior Test Engineer',
@@ -117,11 +115,11 @@ const AboutPage: React.FC = () => {
     ];
 
     return (
-        <div className="flex min-h-screen bg-black text-white p-10">
+        <div className="min-h-screen bg-black text-white p-6 sm:p-10 flex flex-col md:flex-row">
             {/* Main Content: Centered Work Experience and Education */}
-            <div className="flex-1 flex flex-col items-center justify-center text-center" style={{ marginLeft: '25%' }}>
+            <div className="flex-1 flex flex-col items-center text-center mb-10 md:mb-0 md:mr-10 md:ml-[25%]">
                 <h1 className="text-5xl font-bold mb-6">About Me</h1>
-                <p className="text-lg mb-8 max-w-2xl mx-auto">
+                <p className="text-lg mb-8 max-w-2xl mx-auto md:mx-0">
                     I am a passionate Senior Test Engineer with extensive experience in test automation, quality assurance, and building scalable solutions. My expertise spans various tools and methodologies, aimed at optimizing workflows and improving product quality.
                 </p>
 
@@ -155,23 +153,22 @@ const AboutPage: React.FC = () => {
                 </div>
             </div>
 
-            {/* Right Column: Contact and Skills (Aligned to the Right) */}
-            <div className="w-1/4 pl-10 flex flex-col justify-start">
+            {/* Right Column: Contact and Skills */}
+            <div className="md:w-1/4 md:pl-10 flex flex-col text-center md:text-left">
                 <h1 className="text-5xl font-bold mb-6">Contact</h1>
                 <p>Hamburg, Germany</p>
                 <p>+49 1638479152</p>
                 <p>petrukhin.s.a@gmail.com</p>
-
                 <a
                     href="https://www.linkedin.com/in/sergey-petrukhin/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-400 underline"
+                    className="text-blue-400 underline mb-6"
                 >
                     LinkedIn Profile
                 </a>
-                <h2 className="text-3xl font-bold mt-8 mb-4">Skills</h2>
 
+                <h2 className="text-3xl font-bold mt-8 mb-4">Skills</h2>
                 <h3 className="text-xl font-semibold mb-2">Technical:</h3>
                 <ul className="list-disc list-inside mb-4">
                     <li>Java</li>

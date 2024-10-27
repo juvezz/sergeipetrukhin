@@ -168,12 +168,15 @@ const AboutPage: React.FC = () => {
                     LinkedIn Profile
                 </a>
 
-                <h2 className="text-3xl font-bold mt-8 mb-4">Skills</h2>
+                <h2 className="text-3xl font-bold mt-4 md:mt-6 mb-4">Skills</h2>
                 <h3 className="text-xl font-semibold mb-2">Technical:</h3>
                 <ul className="list-disc list-inside mb-4">
                     <li>Java</li>
                     <li>Selenium</li>
+                    <li>TypeScript</li>
+                    <li>Playwright</li>
                     <li>Git</li>
+                    <li>SQL</li>
                     <li>Cypress</li>
                     <li>CI/CD</li>
                     <li>Troubleshooting</li>
@@ -184,7 +187,9 @@ const AboutPage: React.FC = () => {
                     <li>IntelliJ IDEA</li>
                     <li>GitLab</li>
                     <li>Jira</li>
+                    <li>Visual Studio Code</li>
                     <li>Slack as CI/CD reporting tool</li>
+                    <li>Supabase</li>
                 </ul>
 
                 <h3 className="text-xl font-semibold mb-2">Languages:</h3>

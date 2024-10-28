@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import React from 'react';
+import Head from 'next/head'; // Import Head from Next.js
 
 type Education = {
     degree: string;
@@ -17,20 +18,6 @@ type WorkExperience = {
     location: string;
     dateRange: string;
     responsibilities: string[];
-};
-
-export const metadata = {
-    title: 'About Me - Senior QA Automation Engineer',
-    description: 'Senior QA Automation Engineer with extensive experience in test automation and quality assurance.',
-    keywords: ['QA Automation Engineer', 'CV', 'Resume', 'Senior', 'Test Engineer', 'Quality Assurance', 'Java', 'Selenium', 'CI/CD'],
-    author: 'Sergey Petrukhin',
-    creator: 'Sergey Petrukhin',
-    openGraph: {
-        title: 'About Me - Senior QA Automation Engineer',
-        description: 'Senior QA Automation Engineer with extensive experience in test automation and quality assurance.',
-        url: 'https://yourwebsite.com/about',
-        siteName: 'Blog about Testing',
-    },
 };
 
 const AboutPage: React.FC = () => {
@@ -115,91 +102,105 @@ const AboutPage: React.FC = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-black text-white p-6 sm:p-10 flex flex-col md:flex-row">
-            {/* Main Content: Centered Work Experience and Education */}
-            <div className="flex-1 flex flex-col items-center text-center mb-10 md:mb-0 md:mr-10 md:ml-[25%]">
-                <h1 className="text-5xl font-bold mb-6">About Me</h1>
-                <p className="text-lg mb-8 max-w-2xl mx-auto md:mx-0">
-                    I am a passionate Senior Test Engineer with extensive experience in test automation, quality assurance, and building scalable solutions. My expertise spans various tools and methodologies, aimed at optimizing workflows and improving product quality.
-                </p>
+        <>
+            {/* Use the Head component to set page metadata */}
+            <Head>
+                <title>About Me - Senior QA Automation Engineer</title>
+                <meta name="description" content="Senior QA Automation Engineer with extensive experience in test automation and quality assurance." />
+                <meta name="keywords" content="QA Automation Engineer, CV, Resume, Senior, Test Engineer, Quality Assurance, Java, Selenium, CI/CD" />
+                <meta name="author" content="Sergey Petrukhin" />
+                <meta property="og:title" content="About Me - Senior QA Automation Engineer" />
+                <meta property="og:description" content="Senior QA Automation Engineer with extensive experience in test automation and quality assurance." />
+                <meta property="og:url" content="https://sergeipetrukhin.vercel.app/about" />
+                <meta property="og:site_name" content="Blog about Testing" />
+            </Head>
 
-                {/* Work Experience Section */}
-                <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
-                <div className="mb-6">
-                    {workExperience.map((work, index) => (
-                        <div key={index} className="mb-6">
-                            <h3 className="text-xl font-semibold">{work.title}</h3>
-                            <p>{work.company}, {work.location} — {work.dateRange}</p>
-                            {work.responsibilities.length > 0 && (
-                                <ul className="list-disc list-inside mt-2">
-                                    {work.responsibilities.map((resp, index) => (
-                                        <li key={index}>{resp}</li>
-                                    ))}
-                                </ul>
-                            )}
-                        </div>
-                    ))}
+            <div className="min-h-screen bg-black text-white p-6 sm:p-10 flex flex-col md:flex-row">
+                {/* Main Content: Centered Work Experience and Education */}
+                <div className="flex-1 flex flex-col items-center text-center mb-10 md:mb-0 md:mr-10 md:ml-[25%]">
+                    <h1 className="text-5xl font-bold mb-6">About Me</h1>
+                    <p className="text-lg mb-8 max-w-2xl mx-auto md:mx-0">
+                        I am a passionate Senior Test Engineer with extensive experience in test automation, quality assurance, and building scalable solutions. My expertise spans various tools and methodologies, aimed at optimizing workflows and improving product quality.
+                    </p>
+
+                    {/* Work Experience Section */}
+                    <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
+                    <div className="mb-6">
+                        {workExperience.map((work, index) => (
+                            <div key={index} className="mb-6">
+                                <h3 className="text-xl font-semibold">{work.title}</h3>
+                                <p>{work.company}, {work.location} — {work.dateRange}</p>
+                                {work.responsibilities.length > 0 && (
+                                    <ul className="list-disc list-inside mt-2">
+                                        {work.responsibilities.map((resp, index) => (
+                                            <li key={index}>{resp}</li>
+                                        ))}
+                                    </ul>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Education Section */}
+                    <h2 className="text-3xl font-bold mb-4">Education</h2>
+                    <div className="mb-6">
+                        {education.map((edu, index) => (
+                            <div key={index} className="mb-4">
+                                <h3 className="text-xl font-semibold">{edu.degree}</h3>
+                                <p>{edu.major}, {edu.university}, {edu.location}, {edu.dateRange}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
-                {/* Education Section */}
-                <h2 className="text-3xl font-bold mb-4">Education</h2>
-                <div className="mb-6">
-                    {education.map((edu, index) => (
-                        <div key={index} className="mb-4">
-                            <h3 className="text-xl font-semibold">{edu.degree}</h3>
-                            <p>{edu.major}, {edu.university}, {edu.location}, {edu.dateRange}</p>
-                        </div>
-                    ))}
+                {/* Right Column: Contact and Skills */}
+                <div className="md:w-1/4 md:pl-10 flex flex-col text-center md:text-left">
+                    <h1 className="text-5xl font-bold mb-6">Contact</h1>
+                    <p>Hamburg, Germany</p>
+                    <p>+49 1638479152</p>
+                    <p>petrukhin.s.a@gmail.com</p>
+                    <a
+                        href="https://www.linkedin.com/in/sergey-petrukhin/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-400 underline mb-6"
+                    >
+                        LinkedIn Profile
+                    </a>
+
+                    <h2 className="text-3xl font-bold mt-4 md:mt-6 mb-4">Skills</h2>
+                    <h3 className="text-xl font-semibold mb-2">Technical:</h3>
+                    <ul className="list-disc list-inside mb-4">
+                        <li>Java</li>
+                        <li>Selenium</li>
+                        <li>TypeScript</li>
+                        <li>Playwright</li>
+                        <li>Git</li>
+                        <li>SQL</li>
+                        <li>Cypress</li>
+                        <li>CI/CD</li>
+                        <li>Troubleshooting</li>
+                    </ul>
+
+                    <h3 className="text-xl font-semibold mb-2">Tools and Software:</h3>
+                    <ul className="list-disc list-inside mb-4">
+                        <li>IntelliJ IDEA</li>
+                        <li>GitLab</li>
+                        <li>Jira</li>
+                        <li>Visual Studio Code</li>
+                        <li>Slack as CI/CD reporting tool</li>
+                        <li>Supabase</li>
+                    </ul>
+
+                    <h3 className="text-xl font-semibold mb-2">Languages:</h3>
+                    <ul className="list-disc list-inside">
+                        <li>English (C1-C2)</li>
+                        <li>German (B1-B2)</li>
+                        <li>Russian (Native)</li>
+                    </ul>
                 </div>
             </div>
-
-            {/* Right Column: Contact and Skills */}
-            <div className="md:w-1/4 md:pl-10 flex flex-col text-center md:text-left">
-                <h1 className="text-5xl font-bold mb-6">Contact</h1>
-                <p>Hamburg, Germany</p>
-                <p>+49 1638479152</p>
-                <p>petrukhin.s.a@gmail.com</p>
-                <a
-                    href="https://www.linkedin.com/in/sergey-petrukhin/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 underline mb-6"
-                >
-                    LinkedIn Profile
-                </a>
-
-                <h2 className="text-3xl font-bold mt-4 md:mt-6 mb-4">Skills</h2>
-                <h3 className="text-xl font-semibold mb-2">Technical:</h3>
-                <ul className="list-disc list-inside mb-4">
-                    <li>Java</li>
-                    <li>Selenium</li>
-                    <li>TypeScript</li>
-                    <li>Playwright</li>
-                    <li>Git</li>
-                    <li>SQL</li>
-                    <li>Cypress</li>
-                    <li>CI/CD</li>
-                    <li>Troubleshooting</li>
-                </ul>
-
-                <h3 className="text-xl font-semibold mb-2">Tools and Software:</h3>
-                <ul className="list-disc list-inside mb-4">
-                    <li>IntelliJ IDEA</li>
-                    <li>GitLab</li>
-                    <li>Jira</li>
-                    <li>Visual Studio Code</li>
-                    <li>Slack as CI/CD reporting tool</li>
-                    <li>Supabase</li>
-                </ul>
-
-                <h3 className="text-xl font-semibold mb-2">Languages:</h3>
-                <ul className="list-disc list-inside">
-                    <li>English (C1-C2)</li>
-                    <li>German (B1-B2)</li>
-                    <li>Russian (Native)</li>
-                </ul>
-            </div>
-        </div>
+        </>
     );
 };
 

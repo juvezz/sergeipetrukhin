@@ -1,5 +1,3 @@
-// pages/playwright-test.tsx
-
 import CodeBlock from '../components/CodeBlock';
 
 export const metadata = {
@@ -10,36 +8,36 @@ export const metadata = {
 const PlaywrightTest: React.FC = () => {
     return (
         <div className="container mx-auto px-4 py-8 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
-            <h1 className="text-5xl font-extrabold mb-6 text-center text-gray-900 dark:text-gray-100">
+            <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-center text-gray-900 dark:text-gray-100">
                 Writing Your First Test with Playwright and TypeScript
             </h1>
 
-            <p className="text-lg mb-6 leading-relaxed">
+            <p className="text-base md:text-lg mb-6 leading-relaxed">
                 Playwright is a modern end-to-end testing framework that supports multiple browsers and is particularly useful for testing web applications.
                 In this guide, we will walk you through the steps to write your first test using Playwright and TypeScript. We will add playwright test to Next.js
                 project of version 14.
             </p>
 
-            <h2 className="text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Prerequisites</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Prerequisites</h2>
             <ul className="list-disc list-inside mb-6 pl-5">
                 <li>Basic understanding of TypeScript and web testing concepts.</li>
                 <li>Familiarity with npm (Node Package Manager).</li>
             </ul>
 
-            <h2 className="text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Step 1: Installing Node.js</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Step 1: Installing Node.js</h2>
             <p className="mb-6">
                 Before you can start using Playwright, you need to have Node.js installed on your machine. You can download it from the official website:
             </p>
             <ul className="list-disc list-inside mb-6 pl-5">
                 <li>
-                    Visit the <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Node.js website </a>
+                    Visit the <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Node.js website</a>
                     and download the LTS version 18.18 or later.
                 </li>
                 <li>Follow the installation instructions for your operating system.</li>
             </ul>
 
-            <h2 className="text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Step 2: Setting Up Your Project</h2>
-            <ol className="list-decimal list-inside mb-6 pl-5">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Step 2: Setting Up Your Project</h2>
+            <ol className="list-decimal list-inside mb-6 pl-5 space-y-4">
                 <li>
                     <strong>Create a New Directory:</strong>
                     <CodeBlock codeString="mkdir playwright-example && cd playwright-example" />
@@ -62,14 +60,14 @@ What import alias would you like configured? @/*`} />
                 <li>
                     <strong>Install Playwright and TypeScript:</strong>
                     <CodeBlock codeString="npm install -D playwright @playwright/test" />
-                    <strong>Important note: VS code could mark whole package.json file as red with many errors related to project Id,
+                    <strong>Important note: VS code could mark the whole package.json file as red with many errors related to project Id,
                         but everything works correctly anyway. I guess that some kind of bug in compatibility of Next.js and playwright
                     </strong>
                 </li>
             </ol>
 
-            <h2 className="text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Step 3: Writing Your First Test</h2>
-            <ol className="list-decimal list-inside mb-6 pl-5">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Step 3: Writing Your First Test</h2>
+            <ol className="list-decimal list-inside mb-6 pl-5 space-y-4">
                 <li>
                     <strong>Create a Test File:</strong>
                     Create a new directory called <code>tests</code>, and inside it, create a file named <code>example.spec.ts</code>:
@@ -89,8 +87,8 @@ test('homepage has Playwright in title', async ({ page }) => {
                 </li>
             </ol>
 
-            <h2 className="text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Step 4: Running the Test</h2>
-            <ol className="list-decimal list-inside mb-6 pl-5">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Step 4: Running the Test</h2>
+            <ol className="list-decimal list-inside mb-6 pl-5 space-y-4">
                 <li>
                     <strong>Add a Script to package.json:</strong>
                     Update your <code>package.json</code> to include a test script:
@@ -105,17 +103,17 @@ test('homepage has Playwright in title', async ({ page }) => {
                 </li>
             </ol>
 
-            <h2 className="text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Step 5: Analyzing the Results</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Step 5: Analyzing the Results</h2>
             <p className="mb-6">
                 The test output will show whether the test passed or failed. You can troubleshoot any issues based on the error messages provided.
             </p>
 
-            <h2 className="text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Conclusion</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Conclusion</h2>
             <p className="mb-6">
                 In this guide, we covered the steps to set up and write a simple test using Playwright and TypeScript. Explore more advanced testing scenarios such as interactions, assertions, and different browser contexts.
             </p>
 
-            <h2 className="text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Additional Resources</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Additional Resources</h2>
             <ul className="list-disc list-inside mb-6 pl-5">
                 <li>
                     <a href="https://playwright.dev/docs/intro" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">

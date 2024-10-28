@@ -15,6 +15,10 @@ export async function GET() {
       loc: 'https://sergeipetrukhin.vercel.app/playwright-test', // Playwright Test page
       lastmod: new Date().toISOString(),
     },
+    {
+      loc: 'https://sergeipetrukhin.vercel.app/playwright-locators', // Playwright Test page
+      lastmod: new Date().toISOString(),
+    },
     // Add more URLs as needed
   ];
 

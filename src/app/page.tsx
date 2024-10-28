@@ -3,6 +3,7 @@ import Header from '../app/components/Header';
 import Footer from '../app/components/Footer';
 import Link from 'next/link';
 
+
 const Home: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen"> {/* Full height layout */}
@@ -22,12 +23,34 @@ const Home: React.FC = () => {
           </p>
         </div>
 
+        <Link href="/playwright-locators">
+          <section className="mb-8 cursor-pointer bg-gray-100 p-6 rounded-lg shadow-lg hover:bg-gray-200 transition">
+            {/* Enhanced heading */}
+            <h2 className="text-4xl font-bold mb-2 text-blue-600 hover:text-blue-800 transition">
+              Playwright Locators
+            </h2>
+            {/* Fixed date */}
+            <p className="text-sm text-gray-500 mb-2">Posted on October 29, 2024</p>
+            <p className="text-lg text-gray-700 mb-4">
+              A list of posibble playwright locators to get elements using TypeScript.
+            </p>
+            {/* Code block */}
+            <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
+              <code>{`// Fastest way: CSS selectors
+const homeLink = page.locator('nav a.home');
+await homeLink.click();
 
+// Fastest way: ID selectors
+const aboutLink = page.locator('#about-link');
+await aboutLink.click();`}</code>
+            </pre>
+          </section>
+        </Link>
         <Link href="/playwright-test">
           <section className="mb-8 cursor-pointer bg-gray-100 p-6 rounded-lg shadow-lg hover:bg-gray-200 transition">
             {/* Enhanced heading */}
             <h2 className="text-4xl font-bold mb-2 text-blue-600 hover:text-blue-800 transition">
-              Playwright Test
+              Playwright First Test
             </h2>
             {/* Fixed date */}
             <p className="text-sm text-gray-500 mb-2">Posted on October 21, 2024</p>

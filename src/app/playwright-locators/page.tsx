@@ -37,7 +37,7 @@ await aboutLink.click();`}
                     </code>
                 </pre>
                 <p className="text-gray-400 mb-2">
-                    If your element has an ID, always prefer the <code>#id</code> selector as it's the most optimized. For other elements, CSS selectors like class names 
+                    If your element has an ID, always prefer the <code>#id</code> selector as it&apos;s the most optimized. For other elements, CSS selectors like class names 
                     <code> .class-name</code> or attributes are also highly efficient.
                 </p>
             </section>

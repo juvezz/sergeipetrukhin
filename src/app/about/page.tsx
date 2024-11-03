@@ -163,9 +163,17 @@ const AboutPage: React.FC = () => {
                         href="https://www.linkedin.com/in/sergey-petrukhin/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-400 underline mb-6"
+                        className="text-blue-400 underline mb-2"
                     >
                         LinkedIn Profile
+                    </a>
+                    <a
+                        href="https://x.com/petrukhinsergey"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-400 underline mb-2"
+                    >
+                        Twitter Profile
                     </a>
 
                     <h2 className="text-3xl font-bold mt-4 md:mt-6 mb-4">Skills</h2>

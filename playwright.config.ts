@@ -7,5 +7,6 @@ export default defineConfig({
   expect: {
     timeout: 5000
   },
+  reporter: [['html', { open: 'on-failure' }]]
   // More configurations can go here
 });

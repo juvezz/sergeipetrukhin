@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '../app/components/Header';
 import Footer from '../app/components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 const Home: React.FC = () => {
@@ -22,7 +23,31 @@ const Home: React.FC = () => {
             Explore articles and tutorials on testing frameworks, automation tools, and best practices.
           </p>
         </div>
-
+        <Link href="/playwright-visual-regression">
+          <section className="mb-8 cursor-pointer bg-gray-100 p-6 rounded-lg shadow-lg hover:bg-gray-200 transition">
+            {/* Enhanced heading */}
+            <h2 className="text-4xl font-bold mb-2 text-blue-600 hover:text-blue-800 transition">
+              Playwright visual regression testing
+            </h2>
+            {/* Fixed date */}
+            <p className="text-sm text-gray-500 mb-2">Posted on November 07, 2024</p>
+            <p className="text-lg text-gray-700 mb-4">
+              To detect visual problems with CSS, HTML, JS or even 404 error, nice feature of playwright is visual testing.
+            </p>
+            {/* Image instead of code block */}
+            {/* Code block */}
+            <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
+            <code>{`test('About page visual test with maxDiffPixels', async ({ page }) => {
+  await page.goto('https://sergeipetrukhin.vercel.app/about');
+  const screenshot = await page.screenshot();
+  expect(screenshot).toMatchSnapshot('aboutpage.png', {
+    maxDiffPixels: 100 // allows for up to 100 pixel differences
+  });
+});`}
+            </code>
+            </pre>
+          </section>
+        </Link>
         <Link href="/playwright-locators">
           <section className="mb-8 cursor-pointer bg-gray-100 p-6 rounded-lg shadow-lg hover:bg-gray-200 transition">
             {/* Enhanced heading */}

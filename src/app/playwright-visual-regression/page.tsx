@@ -1,14 +1,15 @@
 import React from 'react';
 import CodeBlock from '../components/CodeBlock';
-
-export const metadata = {
-    title: 'Visual Regression Testing with Playwright and TypeScript',
-    description: 'A step-by-step guide on setting up visual regression testing using Playwright and TypeScript in a Next.js 14 project.',
-};
+import Head from 'next/head';
 
 const VisualRegressionTestingBlog: React.FC = () => {
     return (
         <div className="container mx-auto px-4 py-8 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
+            <Head>
+                <title>Visual Regression Testing with Playwright and TypeScript</title>
+                <meta name="description" content="A step-by-step guide on setting up visual regression testing using Playwright and TypeScript in a Next.js 14 project." />
+                <meta name="keywords" content="playwright, visual testing, typescript, QA, AQA" />
+            </Head>
             <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-center text-gray-900 dark:text-gray-100">
                 Visual Regression Testing with Playwright and TypeScript
             </h1>

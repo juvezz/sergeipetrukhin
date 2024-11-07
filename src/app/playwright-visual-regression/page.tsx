@@ -71,7 +71,7 @@ const VisualRegressionTestingBlog: React.FC = () => {
 
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Step 5: Analyzing Results</h2>
             <p className="mb-6">
-                Playwright can generate html report. To do this it's needed to update playwright.config.js
+                Playwright can generate html report. To do this it&apos;s needed to update playwright.config.js
             </p>
             <CodeBlock codeString={`reporter: [['html', { open: 'on-failure' }]]`}/>
             <p>

@@ -8,7 +8,7 @@ const VisualRegressionTestingBlog: React.FC = () => {
             <Head>
                 <title>Visual Regression Testing with Playwright and TypeScript</title>
                 <meta name="description" content="A step-by-step guide on setting up visual regression testing using Playwright and TypeScript in a Next.js 14 project." />
-                <meta name="keywords" content="playwright, visual testing, typescript, QA, AQA" />
+                <meta name="keywords" content="playwright, visual testing, typescript, QA, AQA, visual regression" />
             </Head>
             <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-center text-gray-900 dark:text-gray-100">
                 Visual Regression Testing with Playwright and TypeScript

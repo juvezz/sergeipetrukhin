@@ -181,6 +181,8 @@ const AboutPage: React.FC = () => {
                     <ul className="list-disc list-inside mb-4">
                         <li>Java</li>
                         <li>Selenium</li>
+                        <li>API Testing</li>
+                        <li>Cucumber</li>
                         <li>TypeScript</li>
                         <li>Playwright</li>
                         <li>Git</li>

@@ -26,7 +26,7 @@ const GitHubActions: React.FC = () => {
             <CodeBlock codeString="playwright.config.ts" />
             <p className="mb-6">The content of the configuration file should be as follows:</p>
             <CodeBlock codeString={
-`import { defineConfig } from '@playwright/test';
+                `import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   testDir: 'src/tests',
@@ -49,7 +49,7 @@ export default defineConfig({
             <CodeBlock codeString=".github/workflows/playwright.yml" />
             <p className="mb-6">The file should contain the following workflow configuration:</p>
             <CodeBlock codeString={
-`name: Playwright Tests
+                `name: Playwright Tests
 
 on:
   push:
@@ -88,11 +88,12 @@ jobs:
         with:
           name: screenshots
           path: src/tests/visual.spec.ts-snapshots/`} />
-            <div>You will see error message for first atempt that screenshot doesn't exist. 
-                For first runing it's needed to uncomment line <CodeBlock codeString={`#continue-on-error: true`}/> and download generated screenshot for linux.
-                Then it's needed to add to project and commit.
+            <div>
+                <p>You will see error message for first attempt that screenshot doesn&apos;t exist.</p>
+                <p>For first running it&apos;s needed to uncomment line</p>
+                <CodeBlock codeString={`#continue-on-error: true`} />
             </div>
-            <br></br>    
+            <br></br>
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Step 3: Write Playwright Tests</h2>
             <p className="mb-6">
                 Create a test file in the following directory:
@@ -103,17 +104,17 @@ jobs:
             </p>
             <CodeBlock codeString="tests/visual.spec.ts" />
             <p className="mb-6">Add the following test code:</p>
-            
-The issue arises from how the backticks (`) inside the codeString template literal conflict with the surrounding backticks. 
-To handle this, you can escape the inner backticks or use a different quoting style for the codeString value. Here’s how to fix it:
 
-Solution 1: Escape the Inner Backticks
-Escape the inner backticks using a backslash (\):
+            The issue arises from how the backticks (`) inside the codeString template literal conflict with the surrounding backticks.
+            To handle this, you can escape the inner backticks or use a different quoting style for the codeString value. Here’s how to fix it:
 
-tsx
-Copy code
+            Solution 1: Escape the Inner Backticks
+            Escape the inner backticks using a backslash (\):
+
+            tsx
+            Copy code
             <CodeBlock codeString={
-`import { test, expect } from '@playwright/test';
+                `import { test, expect } from '@playwright/test';
 
 test.describe('Visual Regression Tests', () => {
     test('About page visual snapshot', async ({ page, baseURL }) => {
@@ -133,7 +134,7 @@ test.describe('Visual Regression Tests', () => {
     });
 })`} />
             <p className="mb-6">
-                After completing these steps, your Playwright tests will be automatically executed using GitHub Actions, 
+                After completing these steps, your Playwright tests will be automatically executed using GitHub Actions,
                 ensuring a smooth CI/CD workflow for your Next.js application.
             </p>
         </div>

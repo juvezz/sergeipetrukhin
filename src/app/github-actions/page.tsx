@@ -92,6 +92,8 @@ jobs:
                 <p>You will see error message for first attempt that screenshot doesn&apos;t exist.</p>
                 <p>For first running it&apos;s needed to uncomment line</p>
                 <CodeBlock codeString={`#continue-on-error: true`} />
+                <p>After that you should download generated screenshot for linux and commit to project to snapshots directory. 
+                    This problem exists because of differences in generating html pages 2 different OS macOs and Linux.</p>
             </div>
             <br></br>
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Step 3: Write Playwright Tests</h2>

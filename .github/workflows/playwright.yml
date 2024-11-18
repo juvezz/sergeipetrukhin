@@ -25,16 +25,14 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install chromium
 
-      - name: Copy macOS Screenshots to Linux Version
-        run: |
-          mkdir -p src/tests/visual.spec.ts-snapshots  # Ensure the snapshot directory exists
-          if [ -f src/tests/visual.spec.ts-snapshots/aboutpage-darwin.png ]; then
-            cp src/tests/visual.spec.ts-snapshots/aboutpage-darwin.png src/tests/visual.spec.ts-snapshots/aboutpage-linux.png
-          fi
-        continue-on-error: true  # Continue even if the file doesn't exist (avoid failing the build)    
-
       - name: Build the Next.js app
         run: npm run build
 
       - name: Run Playwright tests
         run: npx playwright test src/tests/visual.spec.ts
+
+      - name: Upload test screenshots as artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: screenshots
+          path: src/tests/visual.spec.ts-snapshots/  

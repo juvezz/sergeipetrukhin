@@ -72,16 +72,27 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-     
+
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        run: npx playwright install chromium
 
       - name: Build the Next.js app
         run: npm run build
 
       - name: Run Playwright tests
-        run: npx playwright test src/tests/visual.spec.ts`} />
+        run: npx playwright test src/tests/visual.spec.ts
+        #continue-on-error: true
 
+      - name: Upload test screenshots as artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: screenshots
+          path: src/tests/visual.spec.ts-snapshots/`} />
+            <div>You will see error message for first atempt that screenshot doesn't exist. 
+                For first runing it's needed to uncomment line <CodeBlock codeString={`#continue-on-error: true`}/> and download generated screenshot for linux.
+                Then it's needed to add to project and commit.
+            </div>
+            <br></br>    
             <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Step 3: Write Playwright Tests</h2>
             <p className="mb-6">
                 Create a test file in the following directory:

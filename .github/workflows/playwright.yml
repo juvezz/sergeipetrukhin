@@ -33,7 +33,7 @@ jobs:
         #continue-on-error: true
 
       - name: Upload test screenshots as artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: screenshots
           path: src/tests/visual.spec.ts-snapshots/  

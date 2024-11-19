@@ -8,7 +8,7 @@ const GitHubActions: React.FC = () => {
             <Head>
                 <title>Automate Playwright Tests in Next.js 14</title>
                 <meta name="description" content="Guide to configuring GitHub Actions to run Playwright tests in a Next.js 14 project with Tailwind CSS." />
-                <meta name="keywords" content="playwright, testing, github actions, typescript, Next.js, QA, AQA" />
+                <meta name="keywords" content="playwright, testing, github actions, typescript, Next.js, QA, AQA, CI, CD, CI/CD" />
             </Head>
 
             <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-center text-gray-900 dark:text-gray-100">

@@ -139,6 +139,13 @@ test.describe('Visual Regression Tests', () => {
                 After completing these steps, your Playwright tests will be automatically executed using GitHub Actions,
                 ensuring a smooth CI/CD workflow for your Next.js application.
             </p>
+            <div className="mt-8">
+                <img
+                    src="/images/githubActions.png"
+                    alt="GitHub Actions Workflow"
+                    className="mx-auto border rounded shadow-lg"
+                />
+            </div>
         </div>
     );
 };

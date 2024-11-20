@@ -23,6 +23,36 @@ const Home: React.FC = () => {
             Explore articles and tutorials on testing frameworks, automation tools, and best practices.
           </p>
         </div>
+        <Link href="/github-actions">
+          <section className="mb-8 cursor-pointer bg-gray-100 p-6 rounded-lg shadow-lg hover:bg-gray-200 transition">
+            <h2 className="text-4xl font-bold mb-2 text-green-600 hover:text-green-800 transition">
+              Automating Playwright Tests with GitHub Actions
+            </h2>
+            <p className="text-sm text-gray-500 mb-2">Posted on November 20, 2024</p>
+            <p className="text-lg text-gray-700 mb-4">
+              Learn how to automate your Playwright tests in a Next.js application using GitHub Actions.
+            </p>
+            <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
+              <code>{`name: Playwright Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+     ...`} </code>
+            </pre>
+          </section>
+        </Link>
         <Link href="/playwright-visual-regression">
           <section className="mb-8 cursor-pointer bg-gray-100 p-6 rounded-lg shadow-lg hover:bg-gray-200 transition">
             {/* Enhanced heading */}

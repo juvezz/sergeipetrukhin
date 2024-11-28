@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import './globals.css'; // If you have global styles
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Metadata } from 'next'; // Import Metadata from next
 import Script from 'next/script'; // Import Script from next for adding scripts
 
@@ -40,6 +41,7 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <Header />
         <main className="flex-grow">
           {children}
+          <SpeedInsights />
           <Analytics />
         </main>
         <Footer />

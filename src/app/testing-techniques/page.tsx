@@ -11,6 +11,8 @@ const TestingTechniques: React.FC = () => {
           content="Learn key black box testing techniques including Equivalence Partitioning, Boundary Value Analysis, 
           Decision Table Testing, State Transition Testing, Exploratory Testing, and Error Guessing."
         />
+        <meta name="keywords" content="testing,QA, AQA, black box testing techniques, Equivalence Partitioning, Boundary Value Analysis, 
+          Decision Table Testing, State Transition Testing, Exploratory Testing, Error Guessing" />
       </Head>
 
       <h1 className="text-4xl font-bold mb-6">Black Box Testing Techniques</h1>

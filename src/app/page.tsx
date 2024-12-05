@@ -1,39 +1,83 @@
-import Head from 'next/head';
-import Header from '../app/components/Header';
-import Footer from '../app/components/Footer';
-import Link from 'next/link';
-import Image from 'next/image';
-
+import Head from "next/head";
+import Header from "../app/components/Header";
+import Footer from "../app/components/Footer";
+import Link from "next/link";
+import Image from "next/image";
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen"> {/* Full height layout */}
+    <div className="flex flex-col min-h-screen">
+      {" "}
+      {/* Full height layout */}
       <Head>
         <title>My Testing Blog</title>
-        <meta name="description" content="A blog about testing and test automation." />
+        <meta
+          name="description"
+          content="A blog about testing and test automation."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className="flex-grow container mx-auto px-4 py-8"> {/* No center text */}
-        <div className="flex flex-col items-center text-center"> {/* Centers content horizontally and aligns text */}
-          <h1 className="text-4xl font-bold mb-6 text-white"> {/* Changed to white for high contrast */}
+      <main className="flex-grow container mx-auto px-4 py-8">
+        {" "}
+        {/* No center text */}
+        <div className="flex flex-col items-center text-center">
+          {" "}
+          {/* Centers content horizontally and aligns text */}
+          <h1 className="text-4xl font-bold mb-6 text-white">
+            {" "}
+            {/* Changed to white for high contrast */}
             Welcome to My Testing Blog
           </h1>
-          <p className="text-lg mb-8 text-gray-300 max-w-2xl"> {/* Lightened the paragraph text for better readability */}
-            Explore articles and tutorials on testing frameworks, automation tools, and best practices.
+          <p className="text-lg mb-8 text-gray-300 max-w-2xl">
+            {" "}
+            {/* Lightened the paragraph text for better readability */}
+            Explore articles and tutorials on testing frameworks, automation
+            tools, and best practices.
           </p>
         </div>
+        <Link href="/testing-techniques">
+          <section className="mb-8 cursor-pointer bg-gray-100 p-6 rounded-lg shadow-lg">
+            <h2 className="text-4xl font-bold mb-2 text-black hover:text-teal-500 transition">
+              Black Box Testing Techniques: A Comprehensive Guide
+            </h2>
+            <p className="text-sm text-gray-500 mb-2">
+              Posted on December 5, 2024
+            </p>
+            <p className="text-lg text-gray-700 mb-4">
+              Discover various black box testing techniques and learn how they
+              ensure quality by focusing on the external functionality of
+              software systems.
+            </p>
+            <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
+              1. Equivalence Partitioning
+              <br />
+              2. Boundary Value Analysis (BVA)
+              <br />
+              3. Decision Table Testing
+              <br />
+              4. State Transition Testing
+              <br />
+              5. Exploratory Testing
+              <br />
+              6. Error Guessing
+            </pre>
+          </section>
+        </Link>
         <Link href="/github-actions">
           <section className="mb-8 cursor-pointer bg-gray-100 p-6 rounded-lg shadow-lg hover:bg-gray-200 transition">
             <h2 className="text-4xl font-bold mb-2 text-green-600 hover:text-green-800 transition">
               Automating Playwright Tests with GitHub Actions
             </h2>
-            <p className="text-sm text-gray-500 mb-2">Posted on November 20, 2024</p>
+            <p className="text-sm text-gray-500 mb-2">
+              Posted on November 20, 2024
+            </p>
             <p className="text-lg text-gray-700 mb-4">
-              Learn how to automate your Playwright tests in a Next.js application using GitHub Actions.
+              Learn how to automate your Playwright tests in a Next.js
+              application using GitHub Actions.
             </p>
             <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
-              <code>{`name: Playwright Tests
+              <code>
+                {`name: Playwright Tests
 
 on:
   push:
@@ -49,7 +93,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-     ...`} </code>
+     ...`}{" "}
+              </code>
             </pre>
           </section>
         </Link>
@@ -60,21 +105,25 @@ jobs:
               Playwright visual regression testing
             </h2>
             {/* Fixed date */}
-            <p className="text-sm text-gray-500 mb-2">Posted on November 07, 2024</p>
+            <p className="text-sm text-gray-500 mb-2">
+              Posted on November 07, 2024
+            </p>
             <p className="text-lg text-gray-700 mb-4">
-              To detect visual problems with CSS, HTML, JS or even 404 error, nice feature of playwright is visual testing.
+              To detect visual problems with CSS, HTML, JS or even 404 error,
+              nice feature of playwright is visual testing.
             </p>
             {/* Image instead of code block */}
             {/* Code block */}
             <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
-            <code>{`test('About page visual test with maxDiffPixels', async ({ page }) => {
+              <code>
+                {`test('About page visual test with maxDiffPixels', async ({ page }) => {
   await page.goto('https://sergeipetrukhin.vercel.app/about');
   const screenshot = await page.screenshot();
   expect(screenshot).toMatchSnapshot('aboutpage.png', {
     maxDiffPixels: 100 // allows for up to 100 pixel differences
   });
 });`}
-            </code>
+              </code>
             </pre>
           </section>
         </Link>
@@ -85,9 +134,12 @@ jobs:
               Playwright Locators
             </h2>
             {/* Fixed date */}
-            <p className="text-sm text-gray-500 mb-2">Posted on October 29, 2024</p>
+            <p className="text-sm text-gray-500 mb-2">
+              Posted on October 29, 2024
+            </p>
             <p className="text-lg text-gray-700 mb-4">
-              A list of posibble playwright locators to get elements using TypeScript.
+              A list of posibble playwright locators to get elements using
+              TypeScript.
             </p>
             {/* Code block */}
             <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
@@ -108,7 +160,9 @@ await aboutLink.click();`}</code>
               Playwright First Test
             </h2>
             {/* Fixed date */}
-            <p className="text-sm text-gray-500 mb-2">Posted on October 21, 2024</p>
+            <p className="text-sm text-gray-500 mb-2">
+              Posted on October 21, 2024
+            </p>
             <p className="text-lg text-gray-700 mb-4">
               A simple Playwright test to check the page title.
             </p>

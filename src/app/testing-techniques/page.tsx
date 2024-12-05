@@ -16,7 +16,7 @@ const TestingTechniques: React.FC = () => {
       <h1 className="text-4xl font-bold mb-6">Black Box Testing Techniques</h1>
       <p className="mb-6">
         Black box testing techniques are essential for ensuring software quality
-        by focusing on the system's external behavior without delving into its
+        by focusing on the system&apos;s external behavior without delving into its
         internal code structure. These techniques help maximize test coverage
         while minimizing the total number of test cases, ensuring efficiency and
         thoroughness. By emphasizing the functionality of the application as
@@ -134,7 +134,7 @@ const TestingTechniques: React.FC = () => {
         </p>
         <p className="mb-4">
           <strong>Example:</strong> A discount system that calculates the
-          discount percentage based on the user's membership status and purchase
+          discount percentage based on the user&apos;s membership status and purchase
           amount.
         </p>
         <table className="table-auto border-collapse border border-gray-500 mb-4 w-full">
@@ -248,7 +248,7 @@ const TestingTechniques: React.FC = () => {
           </li>
           <li>
             <strong>Adding items to the cart:</strong> Test adding multiple
-            items, adjusting quantities, and removing items to check the cart's
+            items, adjusting quantities, and removing items to check the cart&apos;s
             functionality and responsiveness.
           </li>
           <li>
@@ -281,7 +281,7 @@ const TestingTechniques: React.FC = () => {
         <h2 className="text-2xl font-semibold mb-4">6. Error Guessing</h2>
         <p className="mb-4">
           Error Guessing is a creative and experience-driven testing approach
-          that relies on the tester’s intuition, domain knowledge, and expertise
+          that relies on the tester&apos;s intuition, domain knowledge, and expertise
           to identify potential problem areas within the system. Unlike
           formalized testing methods, this unstructured method allows testers to
           explore application areas that are historically error-prone, complex,
@@ -327,7 +327,8 @@ const TestingTechniques: React.FC = () => {
           </li>
           <li>
             <strong>Invalid inputs:</strong> Test with non-numeric inputs like{" "}
-            <code>"abc"</code> or special characters like <code>"$#%^"</code> to
+            <code>&quot;abc&quot;</code> or special characters like{" "}
+            <code>&quot;$#%^&quot;</code> to
             ensure proper validation mechanisms.
           </li>
           <li>

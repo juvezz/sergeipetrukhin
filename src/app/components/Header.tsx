@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       <Head>
         {/* General Metadata */}
         <meta name="description" content="A blog about testing, software quality, and QA best practices." />
-        <meta name="keywords" content="testing, QA, software quality, automation, manual testing, blog" />
+        <meta name="keywords" content="testing, QA, software quality, automation, manual testing, blog, Java, Selenium, Playwright" />
         <meta name="author" content="Sergei Petrukhin" />
 
         {/* Open Graph Metadata (for social media sharing) */}

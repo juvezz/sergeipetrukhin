@@ -1,13 +1,14 @@
 import CodeBlock from '../components/CodeBlock';
-
-export const metadata = {
-    title: 'Writing Your First Test with Playwright and TypeScript',
-    description: 'A guide on writing your first test using Playwright and TypeScript.'
-};
+import Head from 'next/head';
 
 const PlaywrightTest: React.FC = () => {
     return (
         <div className="container mx-auto px-4 py-8 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans">
+            <Head>
+                <title>Writing Your First Test with Playwright and TypeScript</title>
+                <meta name="description" content="A guide on writing your first test using Playwright and TypeScript." />
+                <meta name="keywords" content="playwright, locators, typescript, QA, AQA, automation, first automation test" />
+            </Head>
             <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-center text-gray-900 dark:text-gray-100">
                 Writing Your First Test with Playwright and TypeScript
             </h1>

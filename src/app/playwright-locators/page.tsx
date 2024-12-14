@@ -9,7 +9,7 @@ const PlaywrightLocators = () => {
             <Head>
                 <title>Playwright Locators</title>
                 <meta name="description" content="A comprehensive guide on Playwright locators and element selection strategies with TypeScript, including handling iframes." />
-                <meta name="keywords" content="playwright, locators, typescript" />
+                <meta name="keywords" content="playwright, locators, typescript, QA, AQA, automation" />
             </Head>
 
             <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-400 mb-6">

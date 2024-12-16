@@ -108,7 +108,7 @@ const AboutPage: React.FC = () => {
                 <title>About Me - Senior QA Automation Engineer</title>
                 <meta name="description" content="Senior QA Automation Engineer with extensive experience in test automation and quality assurance." />
                 <meta name="keywords" content="QA Automation Engineer, CV, Resume, Senior, Test Engineer, Quality Assurance, Java, Selenium, CI/CD, 
-                    TypeScript, Playwright, Cypress, JavaScript, Jenkins, Git, API, e2e, integration testing, FullStasck testing" />
+                    TypeScript, Playwright, Cypress, JavaScript, Jenkins, Git, API, e2e, integration testing, FullStasck testing, Sergei, Petrukhin" />
                 <meta name="author" content="Sergey Petrukhin" />
                 <meta property="og:title" content="About Me - Senior QA Automation Engineer" />
                 <meta property="og:description" content="Senior QA Automation Engineer with extensive experience in test automation and quality assurance." />

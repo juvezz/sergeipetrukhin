@@ -17,7 +17,7 @@ const JavaQAInterviewQuestions: React.FC = () => {
       </h1>
       <p className="mb-6">
         Java QA Automation is an essential skill for ensuring software quality
-        and reliability. If you are preparing for a QA automation role, it's
+        and reliability. If you are preparing for a QA automation role, it&apos;s
         crucial to understand not only Java fundamentals but also how Java is
         applied in testing automation tools like Selenium. Below are some common
         interview questions to help you prepare for a Java QA Automation

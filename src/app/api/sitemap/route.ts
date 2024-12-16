@@ -16,19 +16,19 @@ export async function GET() {
       lastmod: new Date().toISOString(),
     },
     {
-      loc: 'https://sergeipetrukhin.vercel.app/playwright-locators', // Playwright Test page
+      loc: 'https://sergeipetrukhin.vercel.app/playwright-locators', // Playwright locators
       lastmod: new Date().toISOString(),
     },
     {
-      loc: 'https://sergeipetrukhin.vercel.app/playwright-visual-regression', // Playwright Test page
+      loc: 'https://sergeipetrukhin.vercel.app/playwright-visual-regression', // Playwright visual testing
       lastmod: new Date().toISOString(),
     },
     {
-      loc: 'https://sergeipetrukhin.vercel.app/github-actions', // Playwright Test page
+      loc: 'https://sergeipetrukhin.vercel.app/github-actions', // github actions
       lastmod: new Date().toISOString(),
     },
     {
-      loc: 'https://sergeipetrukhin.vercel.app/testing-techniques', // Playwright Test page
+      loc: 'https://sergeipetrukhin.vercel.app/testing-techniques', // theory testing
       lastmod: new Date().toISOString(),
     },
     // Add more URLs as needed

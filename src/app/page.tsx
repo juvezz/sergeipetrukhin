@@ -35,6 +35,33 @@ const Home: React.FC = () => {
             tools, and best practices.
           </p>
         </div>
+        <Link href="/java-interview-part1">
+          <section className="mb-8 cursor-pointer bg-gray-100 p-6 rounded-lg shadow-lg">
+            <h2 className="text-4xl font-bold mb-2 text-black hover:text-teal-500 transition">
+              Java Basics for QA Automation: Interview questions part 1
+            </h2>
+            <p className="text-sm text-gray-500 mb-2">
+              Posted on December 7, 2024
+            </p>
+            <p className="text-lg text-gray-700 mb-4">
+              A first part of interview questions with answers for position Java
+              QA Automation Enginner.
+            </p>
+            <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
+              1. String Comparison: == vs .equals()
+              <br />
+              2. Waits in Selenium: Implicit, Explicit, Fluent Waits
+              <br />
+              3. Basic Selenium Script: Automating Login Page
+              <br />
+              4. Page Object Model (POM) Design Pattern
+              <br />
+              5. Opening a New Tab using WebDriver
+              <br />
+              Add Another Questions
+            </pre>
+          </section>
+        </Link>
         <Link href="/testing-techniques">
           <section className="mb-8 cursor-pointer bg-gray-100 p-6 rounded-lg shadow-lg">
             <h2 className="text-4xl font-bold mb-2 text-black hover:text-teal-500 transition">

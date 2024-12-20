@@ -60,7 +60,7 @@ const JavaQAInterviewQuestionsPart2: React.FC = () => {
           File uploads in Selenium can be performed using the{" "}
           <code>sendKeys()</code> method to input the file path into a file
           input element. Ensure that the input element has the{" "}
-          <code>type="file"</code> attribute.
+          <code>type=&quot;file&quot;</code> attribute.
         </p>
         <CodeBlock
           codeString={`WebElement uploadElement = driver.findElement(By.id("fileUpload"));

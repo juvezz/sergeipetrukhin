@@ -35,10 +35,37 @@ const Home: React.FC = () => {
             tools, and best practices.
           </p>
         </div>
+        <Link href="/java-interview-part2">
+          <section className="mb-8 cursor-pointer bg-gray-100 p-6 rounded-lg shadow-lg">
+            <h2 className="text-4xl font-bold mb-2 text-black hover:text-teal-500 transition">
+              Java QA Automation: Interview Questions Part 2
+            </h2>
+            <p className="text-sm text-gray-500 mb-2">
+              Posted on December 19, 2024
+            </p>
+            <p className="text-lg text-gray-700 mb-4">
+              A continuation of the Java QA Automation interview series,
+              focusing on advanced topics for automation engineers.
+            </p>
+            <pre className="bg-gray-800 text-white p-4 rounded-md overflow-auto">
+              11. Singleton Design Pattern for WebDriver Management
+              <br />
+              12. Handling File Uploads in Selenium
+              <br />
+              13. Configuring Parallel Execution in TestNG and JUnit
+              <br />
+              14. Validating Tooltips in Selenium
+              <br />
+              15. DataProviders in TestNG for Data-Driven Testing
+              <br />
+              Explore Other Questions
+            </pre>
+          </section>
+        </Link>
         <Link href="/java-interview-part1">
           <section className="mb-8 cursor-pointer bg-gray-100 p-6 rounded-lg shadow-lg">
             <h2 className="text-4xl font-bold mb-2 text-black hover:text-teal-500 transition">
-              Java Basics for QA Automation: Interview questions part 1
+              Java QA Automation: Interview Questions Part 1
             </h2>
             <p className="text-sm text-gray-500 mb-2">
               Posted on December 17, 2024

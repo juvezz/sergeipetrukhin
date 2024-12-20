@@ -41,7 +41,7 @@ const Home: React.FC = () => {
               Java QA Automation: Interview Questions Part 2
             </h2>
             <p className="text-sm text-gray-500 mb-2">
-              Posted on December 19, 2024
+              Posted on December 20, 2024
             </p>
             <p className="text-lg text-gray-700 mb-4">
               A continuation of the Java QA Automation interview series,

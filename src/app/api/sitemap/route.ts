@@ -31,6 +31,10 @@ export async function GET() {
       loc: 'https://sergeipetrukhin.vercel.app/testing-techniques', // theory testing
       lastmod: new Date().toISOString(),
     },
+    {
+      loc: 'https://sergeipetrukhin.vercel.app/java-interview-part1', // java interview questions 1
+      lastmod: new Date().toISOString(),
+    },
     // Add more URLs as needed
   ];
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sergeipetrukhin.vercel.app/api/sitemap
+Sitemap: https://sergeipetrukhin.vercel.app/sitemap.xml
